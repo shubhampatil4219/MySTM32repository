@@ -1,0 +1,3 @@
+Maint_General_Info_Bat1.c:29:6:Send_Maint_GeneralInfo_Bat1_STM_to_Raspi	128	static
+Maint_General_Info_Bat1.c:200:6:Send_Maint_GeneralInfo_Bat1_STM_to_Raspi_asoc	56	static
+Maint_General_Info_Bat1.c:213:6:Send_Maint_GeneralInfo_Bat1_STM_to_Raspi_voltage	56	static
