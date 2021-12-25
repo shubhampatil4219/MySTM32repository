@@ -1,0 +1,3958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">border:none;</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="main_header">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 0, 255);
+border:none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="title_bar_container">
+         <property name="styleSheet">
+          <string notr="true">border:rgb(27, 29, 35);
+background-color: rgb(27, 29, 35);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="left_toggle_menu">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>65</width>
+            <height>70</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>65</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>65</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame
+{background-color: rgb(27, 29, 35);
+border:none;
+}
+QPushButton{
+background-color: rgb(27, 29, 35);
+padding: 5px, 10px;
+border-radius:20px
+}
+QFrame:hover
+{
+background-color:rgb(0,92,157);
+border:none;
+}
+</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="left_toggle_menu_btn">
+             <property name="minimumSize">
+              <size>
+               <width>65</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>65</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+background-color: rgb(27, 29, 35);
+border:none;
+}
+QPushButton:hover
+{
+background-color:rgb(0,92,157);
+
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="icon.qrc">
+               <normaloff>:/icon/icons/24x24/cil-menu.png</normaloff>:/icon/icons/24x24/cil-menu.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="top_right_btns">
+         <property name="maximumSize">
+          <size>
+           <width>130</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(27, 29, 35);
+border:none;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="minimize_btn">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover{
+background-color:rgb(0,92,157);
+}</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="icon">
+             <iconset resource="icon.qrc">
+              <normaloff>:/icon/icons/24x24/cil-minus.png</normaloff>:/icon/icons/24x24/cil-minus.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+
+{background-image: url(:/icon/icons/24x24/cil-media-stop.png);
+background-repeat:none;
+}
+QPushButton:hover{
+background-color:rgb(0,92,157);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="close_btn">
+            <property name="maximumSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover{
+background-color:rgb(0,92,157);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icon.qrc">
+              <normaloff>:/icon/icons/24x24/cil-x.png</normaloff>:/icon/icons/24x24/cil-x.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="main_body">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 0);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="left_menu">
+         <property name="minimumSize">
+          <size>
+           <width>65</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>0</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame
+{background-color: rgb(27, 29, 35);
+border:none;
+}
+QPushButton{
+background-color: rgb(27, 29, 35);
+padding: 5px, 20px;
+border-radius:20px
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="pushButton_1">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>85</y>
+            <width>121</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>121</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background-image: url(:/icons/IC2/feather/battery.svg);
+
+background-repeat:none;
+background-position:center left;
+color: rgb(255, 255, 255);
+padding-left:47px;
+padding-top:25px;
+background-repeat:none;
+}
+QPushButton:pressed{
+border-radius: 50px;
+border: 1px solid red;
+}</string>
+          </property>
+          <property name="text">
+           <string>BATTERY</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_0">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>0</y>
+            <width>100</width>
+            <height>67</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background-image: url(:/icon/icons/24x24/cil-home.png);
+background-repeat:none;
+background-position:center left;
+color: rgb(255, 255, 255);
+padding-left:47px;
+padding-top:25px;
+background-repeat:none
+}
+
+QPushButton:pressed{
+border-radius: 50px;
+border: 1px solid red;
+}
+
+
+
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>HOME</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_Maintenance">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>165</y>
+            <width>200</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>121</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+/*background-image: url(:/icons/IC2/feather/battery.svg);
+background-repeat:none;
+background-position:bottom left;
+color: rgb(255, 255, 255);
+padding-left:47px;
+padding-top:25px;
+*/
+background-image: url(:/icon/icons/24x24/cil-folder.png);
+
+	
+
+background-repeat:none;
+background-position:center left;
+color: rgb(255, 255, 255);
+padding-left:30px;
+padding-top:25px;
+background-repeat:none
+
+
+
+}
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>MAINTENANCE</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>225</y>
+            <width>150</width>
+            <height>67</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>121</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+/*border:none;
+	background-image: url(:/icons/IC2/feather/battery.svg);
+background-repeat:none;
+background-position:center left;
+color: rgb(255, 255, 255);
+padding-left:20px;
+padding-top:25px;
+background-repeat:none
+*/
+
+background-image: url(:/icons/IC2/feather/briefcase.svg);
+background-repeat:none;
+background-position:center left;
+color: rgb(255, 255, 255);
+padding-left:47px;
+padding-top:25px;
+background-repeat:none
+}
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>PRODUCTION</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>305</y>
+            <width>200</width>
+            <height>67</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	
+	background-image: url(:/icons/IC2/feather/inbox.svg);
+
+	
+
+background-repeat:none;
+background-position:center left;
+color: rgb(255, 255, 255);
+padding-RIGHT:15px;
+padding-top:25px;
+background-repeat:none
+
+}
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>SHIPMENT</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>385</y>
+            <width>200</width>
+            <height>67</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background-image: url(:/icons/IC2/feather/tool.svg);
+background-repeat:none;
+background-position:center left;
+color: rgb(255, 255, 255);
+padding-left:17px;
+padding-top:25px;
+background-repeat:none
+
+}
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>MAINTENANCE</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_BAT1">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>110</y>
+            <width>21</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>32</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(27, 29, 35);
+</string>
+          </property>
+          <property name="text">
+           <string>BAT</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_MAIN_2">
+          <property name="geometry">
+           <rect>
+            <x>18</x>
+            <y>190</y>
+            <width>31</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(27, 29, 35);</string>
+          </property>
+          <property name="text">
+           <string>MAIN</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_PRO">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>270</y>
+            <width>31</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(27, 29, 35);</string>
+          </property>
+          <property name="text">
+           <string>PRO</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_SHIP">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>350</y>
+            <width>31</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(27, 29, 35);</string>
+          </property>
+          <property name="text">
+           <string>SHIP</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_MAIN">
+          <property name="geometry">
+           <rect>
+            <x>19</x>
+            <y>435</y>
+            <width>31</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(27, 29, 35);</string>
+          </property>
+          <property name="text">
+           <string>MAIN</string>
+          </property>
+         </widget>
+         <zorder>pushButton_0</zorder>
+         <zorder>pushButton_Maintenance</zorder>
+         <zorder>pushButton_3</zorder>
+         <zorder>pushButton_4</zorder>
+         <zorder>pushButton_5</zorder>
+         <zorder>pushButton_1</zorder>
+         <zorder>label_BAT1</zorder>
+         <zorder>label_MAIN_2</zorder>
+         <zorder>label_PRO</zorder>
+         <zorder>label_SHIP</zorder>
+         <zorder>label_MAIN</zorder>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="centre_main_items">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(47, 47, 47);
+border:none;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QStackedWidget" name="stackedWidget">
+          <property name="geometry">
+           <rect>
+            <x>-1</x>
+            <y>-1</y>
+            <width>16777215</width>
+            <height>16777215</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="currentIndex">
+           <number>2</number>
+          </property>
+          <widget class="QWidget" name="page_0">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(47, 47, 47);</string>
+           </property>
+           <widget class="QLabel" name="label_9">
+            <property name="geometry">
+             <rect>
+              <x>400</x>
+              <y>20</y>
+              <width>365</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>25</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+border-radius:5px;
+background-color: rgb(27, 29, 35);</string>
+            </property>
+            <property name="text">
+             <string>BATTERY TEST SYSTEM</string>
+            </property>
+           </widget>
+           <widget class="QFrame" name="frame_3">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>90</y>
+              <width>1150</width>
+              <height>540</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+
+background-color: rgb(70, 70, 70);
+border-radius:10px;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="label_35">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>20</y>
+               <width>305</width>
+               <height>40</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);
+border-radius:5px;
+</string>
+             </property>
+             <property name="text">
+              <string>Manufacturer Name: LS Telcom AG</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_36">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>70</y>
+               <width>210</width>
+               <height>40</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);
+border-radius:5px;
+</string>
+             </property>
+             <property name="text">
+              <string>Device Name: BQ40Z80</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_37">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>120</y>
+               <width>270</width>
+               <height>40</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);
+border-radius:5px;
+</string>
+             </property>
+             <property name="text">
+              <string>Device Chemistry: Lithium Ion</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QFrame" name="frame_4">
+             <property name="geometry">
+              <rect>
+               <x>300</x>
+               <y>320</y>
+               <width>535</width>
+               <height>147</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-image: url(:/icons/Logo_ohne_claim/LS_telcom_4C_ohneClaim_1.png);
+background-color: rgb(70, 70, 70);
+background-repeat:none;</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_1">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(47, 47, 47);</string>
+           </property>
+           <widget class="QFrame" name="Battery_frame">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>30</y>
+              <width>16777215</width>
+              <height>16777215</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QStackedWidget" name="stackedWidget_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>10</y>
+               <width>16777215</width>
+               <height>16777215</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(47, 47, 47);</string>
+             </property>
+             <property name="currentIndex">
+              <number>1</number>
+             </property>
+             <widget class="QWidget" name="page">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(47, 47, 47);</string>
+              </property>
+              <widget class="QProgressBar" name="progressBar">
+               <property name="geometry">
+                <rect>
+                 <x>150</x>
+                 <y>170</y>
+                 <width>150</width>
+                 <height>250</height>
+                </rect>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QProgressBar{
+
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+border-radius:10px;
+border-style:solid;
+
+
+text-align:top;
+   
+}
+
+QProgressBar::chunk{
+
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(0, 159, 0, 255));
+border-radius:10px;
+}
+</string>
+               </property>
+               <property name="value">
+                <number>90</number>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignJustify|Qt::AlignTop</set>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="textDirection">
+                <enum>QProgressBar::TopToBottom</enum>
+               </property>
+              </widget>
+              <widget class="QFrame" name="frame_2">
+               <property name="geometry">
+                <rect>
+                 <x>500</x>
+                 <y>20</y>
+                 <width>700</width>
+                 <height>600</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+/*background-color: rgb(70, 70, 70);*/
+background-color: rgb(47, 47, 47);
+border-radius:10px;
+</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLabel" name="label">
+                <property name="geometry">
+                 <rect>
+                  <x>140</x>
+                  <y>15</y>
+                  <width>480</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>PibotoLt</family>
+                  <pointsize>15</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);
+border-radius:5px;
+
+</string>
+                </property>
+                <property name="text">
+                 <string>BATTERY-1  STATUS</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_2">
+                <property name="geometry">
+                 <rect>
+                  <x>40</x>
+                  <y>130</y>
+                  <width>250</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">/*background-color: rgb(0, 0, 0);*/
+background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-radius:5px;
+padding-left:2px;</string>
+                </property>
+                <property name="text">
+                 <string>Voltage:                           mV</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_3">
+                <property name="geometry">
+                 <rect>
+                  <x>40</x>
+                  <y>210</y>
+                  <width>250</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-radius:5px;
+padding-left:2px;</string>
+                </property>
+                <property name="text">
+                 <string>Current:                           mA  </string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_4">
+                <property name="geometry">
+                 <rect>
+                  <x>40</x>
+                  <y>290</y>
+                  <width>250</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-radius:5px;
+padding-left:2px;</string>
+                </property>
+                <property name="text">
+                 <string>ASOC:                              %</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_6">
+                <property name="geometry">
+                 <rect>
+                  <x>320</x>
+                  <y>130</y>
+                  <width>350</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-radius:5px;
+padding-left:2px;</string>
+                </property>
+                <property name="text">
+                 <string>Remaining Capacity:                         mAh</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_7">
+                <property name="geometry">
+                 <rect>
+                  <x>320</x>
+                  <y>210</y>
+                  <width>250</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-radius:5px;
+padding-left:2px;</string>
+                </property>
+                <property name="text">
+                 <string>Temperature:                      °C</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_8">
+                <property name="geometry">
+                 <rect>
+                  <x>320</x>
+                  <y>290</y>
+                  <width>250</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-radius:5px;
+padding-left:2px;</string>
+                </property>
+                <property name="text">
+                 <string>No of cycles:                cycles</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="Voltage_value">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>130</y>
+                  <width>120</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">/*background-color: rgb(0, 0, 0);*/
+background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-radius:5px;
+padding-left:2px;</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="Current_value">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>210</y>
+                  <width>120</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">/*background-color: rgb(0, 0, 0);*/
+background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-radius:5px;
+padding-left:2px;</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="ASOC_value">
+                <property name="geometry">
+                 <rect>
+                  <x>120</x>
+                  <y>290</y>
+                  <width>120</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">/*background-color: rgb(0, 0, 0);*/
+background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-radius:5px;
+padding-left:2px;</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="Temperature_value">
+                <property name="geometry">
+                 <rect>
+                  <x>445</x>
+                  <y>210</y>
+                  <width>90</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">/*background-color: rgb(0, 0, 0);*/
+background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-radius:5px;
+padding-left:2px;</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="Cycle_value">
+                <property name="geometry">
+                 <rect>
+                  <x>450</x>
+                  <y>290</y>
+                  <width>50</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">/*background-color: rgb(0, 0, 0);*/
+background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-radius:5px;
+padding-left:2px;</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="Rcapacity_value">
+                <property name="geometry">
+                 <rect>
+                  <x>505</x>
+                  <y>130</y>
+                  <width>110</width>
+                  <height>50</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">/*background-color: rgb(0, 0, 0);*/
+background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-radius:5px;
+padding-left:2px;</string>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QLabel" name="label_10">
+               <property name="geometry">
+                <rect>
+                 <x>190</x>
+                 <y>150</y>
+                 <width>68</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:4px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="page_2">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(47, 47, 47)</string>
+              </property>
+              <widget class="QLabel" name="label_12">
+               <property name="geometry">
+                <rect>
+                 <x>600</x>
+                 <y>150</y>
+                 <width>250</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+border-right:1px solid white;
+border-bottom:1px solid white;
+color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Voltage</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_14">
+               <property name="geometry">
+                <rect>
+                 <x>600</x>
+                 <y>250</y>
+                 <width>250</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);
+border-right:1px solid white;
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string>RSOC</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_15">
+               <property name="geometry">
+                <rect>
+                 <x>600</x>
+                 <y>200</y>
+                 <width>250</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+border-right:1px solid white;
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string>Current</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_16">
+               <property name="geometry">
+                <rect>
+                 <x>600</x>
+                 <y>300</y>
+                 <width>250</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+border-right:1px solid white;
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string>ASOC</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_17">
+               <property name="geometry">
+                <rect>
+                 <x>600</x>
+                 <y>350</y>
+                 <width>250</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+border-right:1px solid white;
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string>Remaining Capacity</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_18">
+               <property name="geometry">
+                <rect>
+                 <x>600</x>
+                 <y>400</y>
+                 <width>250</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+border-right:1px solid white;
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string>Temperature</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_19">
+               <property name="geometry">
+                <rect>
+                 <x>600</x>
+                 <y>450</y>
+                 <width>250</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+border-right:1px solid white;
+color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>No of cycles</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_20">
+               <property name="geometry">
+                <rect>
+                 <x>850</x>
+                 <y>150</y>
+                 <width>150</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+border-right:1px solid white;
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_21">
+               <property name="geometry">
+                <rect>
+                 <x>850</x>
+                 <y>200</y>
+                 <width>150</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+border-right:1px solid white;
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_22">
+               <property name="geometry">
+                <rect>
+                 <x>850</x>
+                 <y>250</y>
+                 <width>150</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+border-right:1px solid white;
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_23">
+               <property name="geometry">
+                <rect>
+                 <x>850</x>
+                 <y>300</y>
+                 <width>150</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+border-right:1px solid white;
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_24">
+               <property name="geometry">
+                <rect>
+                 <x>850</x>
+                 <y>350</y>
+                 <width>150</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+border-right:1px solid white;
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_25">
+               <property name="geometry">
+                <rect>
+                 <x>850</x>
+                 <y>400</y>
+                 <width>150</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+border-right:1px solid white;
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_26">
+               <property name="geometry">
+                <rect>
+                 <x>850</x>
+                 <y>450</y>
+                 <width>150</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+border-right:1px solid white;
+color: rgb(255, 255, 255);
+</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_27">
+               <property name="geometry">
+                <rect>
+                 <x>1000</x>
+                 <y>150</y>
+                 <width>80</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string>mV</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_28">
+               <property name="geometry">
+                <rect>
+                 <x>1000</x>
+                 <y>200</y>
+                 <width>80</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string>mA</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_29">
+               <property name="geometry">
+                <rect>
+                 <x>1000</x>
+                 <y>250</y>
+                 <width>80</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string>%</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_30">
+               <property name="geometry">
+                <rect>
+                 <x>1000</x>
+                 <y>300</y>
+                 <width>80</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string>%</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_31">
+               <property name="geometry">
+                <rect>
+                 <x>1000</x>
+                 <y>350</y>
+                 <width>80</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string>mAh</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_32">
+               <property name="geometry">
+                <rect>
+                 <x>1000</x>
+                 <y>400</y>
+                 <width>80</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+
+color: rgb(255, 255, 255);
+border-bottom:1px solid white;</string>
+               </property>
+               <property name="text">
+                <string>°C</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_33">
+               <property name="geometry">
+                <rect>
+                 <x>1000</x>
+                 <y>450</y>
+                 <width>80</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+
+color: rgb(255, 255, 255);
+</string>
+               </property>
+               <property name="text">
+                <string>cycles</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QProgressBar" name="progressBar_2">
+               <property name="geometry">
+                <rect>
+                 <x>150</x>
+                 <y>200</y>
+                 <width>150</width>
+                 <height>250</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QProgressBar{
+
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+border-radius:10px;
+border-style:solid;
+
+
+text-align:top;
+   
+}
+
+QProgressBar::chunk{
+
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(0, 159, 0, 255));
+border-radius:10px;
+}
+</string>
+               </property>
+               <property name="value">
+                <number>24</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_13">
+               <property name="geometry">
+                <rect>
+                 <x>193</x>
+                 <y>180</y>
+                 <width>68</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);
+border-bottom:1px solid white;
+border-radius:4px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_34">
+               <property name="geometry">
+                <rect>
+                 <x>350</x>
+                 <y>30</y>
+                 <width>480</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(27, 29, 35);
+border-radius:5px;</string>
+               </property>
+               <property name="text">
+                <string>BATTERY-2 STATUS</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="page_3">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(47, 47, 47)</string>
+              </property>
+              <widget class="QProgressBar" name="progressBar_3">
+               <property name="geometry">
+                <rect>
+                 <x>480</x>
+                 <y>170</y>
+                 <width>150</width>
+                 <height>250</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QProgressBar{
+
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+border-radius:10px;
+border-style:solid;
+
+
+text-align:top;
+   
+}
+
+QProgressBar::chunk{
+
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(0, 159, 0, 255));
+border-radius:10px;
+}
+</string>
+               </property>
+               <property name="value">
+                <number>24</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_38">
+               <property name="geometry">
+                <rect>
+                 <x>522</x>
+                 <y>150</y>
+                 <width>68</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:4px;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_39">
+               <property name="geometry">
+                <rect>
+                 <x>190</x>
+                 <y>170</y>
+                 <width>220</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Voltage:                     mV</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_40">
+               <property name="geometry">
+                <rect>
+                 <x>190</x>
+                 <y>220</y>
+                 <width>220</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Current:                     mA</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_41">
+               <property name="geometry">
+                <rect>
+                 <x>190</x>
+                 <y>270</y>
+                 <width>201</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>RSOC:                        %</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_42">
+               <property name="geometry">
+                <rect>
+                 <x>190</x>
+                 <y>320</y>
+                 <width>201</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>ASOC:                        %</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_43">
+               <property name="geometry">
+                <rect>
+                 <x>700</x>
+                 <y>170</y>
+                 <width>357</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Remaining Capacity:                       mAh</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_44">
+               <property name="geometry">
+                <rect>
+                 <x>700</x>
+                 <y>220</y>
+                 <width>357</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Temperature:                                   °C</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_45">
+               <property name="geometry">
+                <rect>
+                 <x>700</x>
+                 <y>270</y>
+                 <width>410</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>No of Cycles:                                   cycles</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_46">
+               <property name="geometry">
+                <rect>
+                 <x>430</x>
+                 <y>40</y>
+                 <width>250</width>
+                 <height>50</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);
+border-radius:10px;</string>
+               </property>
+               <property name="text">
+                <string>BATTERY-3 STATUS</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="frame">
+            <property name="geometry">
+             <rect>
+              <x>195</x>
+              <y>0</y>
+              <width>16777215</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(27, 29, 35);
+border:none;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_8">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>65</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-image: url(:/icons/IC2/feather/battery.svg);
+background-repeat:none;
+background-position:top;
+background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-right:3px solid black;
+border-bottom:1px solid black;
+padding-top:20px;
+/*border-bottom: 1px solid black;*/
+}
+QPushButton:checked{
+border-radius: 50px;
+border:1px solid green;
+
+}</string>
+            </property>
+            <property name="text">
+             <string>BAT1</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_10">
+            <property name="geometry">
+             <rect>
+              <x>65</x>
+              <y>0</y>
+              <width>65</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+
+{
+background-image: url(:/icons/IC2/feather/battery.svg);
+background-repeat:none;
+background-position:top;
+background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);
+border-right:3px solid black;
+border-bottom:1px solid black;
+padding-top:20px;
+}
+QPushButton:checked{
+border-radius: 50px;
+border: 1px solid green;
+}</string>
+            </property>
+            <property name="text">
+             <string>BAT2</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_9">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>0</y>
+              <width>67</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-image: url(:/icons/IC2/feather/battery.svg);
+background-color: rgb(47, 47, 47);
+background-position:top;
+background-repeat:none;
+color: rgb(255, 255, 255);
+border-right:3px solid black;
+border-bottom:1px solid black;
+padding-top:20px;
+}
+QPushButton:checked{
+border-radius: 50px;
+border: 1px solid green;
+}</string>
+            </property>
+            <property name="text">
+             <string>BAT3</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_Maintenance">
+           <widget class="QPushButton" name="Bat1_Maint_GI_Button">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>80</y>
+              <width>99</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);
+border-radius:5px;
+}
+QPushButton:pressed
+{
+border: 1px solid green;
+}</string>
+            </property>
+            <property name="text">
+             <string>Display Bat 1
+Gen Info</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Bat1EnterMaint_button">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>10</y>
+              <width>99</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton{
+background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);
+border-radius:5px;
+}
+QPushButton:checked
+{
+border: 1px solid green;
+}</string>
+            </property>
+            <property name="text">
+             <string>Bat 1 Enter
+Maintenance</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Test_report_bat1_button">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>220</y>
+              <width>99</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);
+border-radius:5px;</string>
+            </property>
+            <property name="text">
+             <string>Create test
+Report</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_bat1_Mainte_GI">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>10</y>
+              <width>350</width>
+              <height>600</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">/*background-color: rgb(47, 47, 47);
+*/
+background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;
+&lt;pre&gt;
+&lt;br&gt;
+&lt;br&gt;Serial No :                                    
+&lt;br&gt;Manuf. Date : 
+&lt;br&gt;Manuf. Name :
+&lt;br&gt;Cycle Count :                                           cycles
+&lt;br&gt;Rem. Capacity :                                       mAh
+&lt;br&gt;ASOC:                                                           %
+&lt;br&gt;Voltage :                                                      mV
+&lt;br&gt;Temperature :                                             °C
+&lt;br&gt;Bat Status:    
+&lt;/pre&gt;
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::RichText</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_bat1_GI_Heading">
+            <property name="geometry">
+             <rect>
+              <x>250</x>
+              <y>20</y>
+              <width>200</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(27, 29, 35);
+</string>
+            </property>
+            <property name="text">
+             <string>Bat 1 General Information</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_GI_SN">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>80</y>
+              <width>100</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_GI_MD">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>120</y>
+              <width>100</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_GI_MN">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>165</y>
+              <width>100</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_GI_CC">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>205</y>
+              <width>100</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_GI_RC">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>250</y>
+              <width>100</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_GI_ASOC">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>295</y>
+              <width>100</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_GI_Volt">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>340</y>
+              <width>100</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_GI_Temp">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>380</y>
+              <width>100</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_GI_BS">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>430</y>
+              <width>200</width>
+              <height>170</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Bat1_Star_Auto_Test_Button">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>150</y>
+              <width>111</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);
+border-radius:5px;
+}
+QPushButton:checked
+{
+border: 1px solid green;
+}</string>
+            </property>
+            <property name="text">
+             <string>Start Bat 1
+ Maint Autotest</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_bat1_maint_SpecificInfo">
+            <property name="geometry">
+             <rect>
+              <x>520</x>
+              <y>10</y>
+              <width>300</width>
+              <height>350</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(27, 29, 35);
+
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;
+&lt;pre&gt;
+&lt;br&gt;
+&lt;br&gt;Design Capacity:                                  mAh
+&lt;br&gt;Full Charge Capacity:                          mAh 
+&lt;br&gt;Bat Status:
+&lt;br&gt;
+&lt;br&gt;Run Time To Empty:                           
+&lt;br&gt;Discharge 10% Start:                          min
+Discharge 10% End:		  min
+&lt;/br&gt;&lt;/pre&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::RichText</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_bat1_SPCInfo_Heading">
+            <property name="geometry">
+             <rect>
+              <x>590</x>
+              <y>20</y>
+              <width>200</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(27, 29, 35);
+</string>
+            </property>
+            <property name="text">
+             <string>Bat1 Specific Information</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_SPCI_DC">
+            <property name="geometry">
+             <rect>
+              <x>670</x>
+              <y>78</y>
+              <width>95</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_SPCI_FCC">
+            <property name="geometry">
+             <rect>
+              <x>670</x>
+              <y>120</y>
+              <width>95</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_GI_BS_bit6">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>430</y>
+              <width>200</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_GI_BS_bit7">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>450</y>
+              <width>200</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_GI_BS_bit15to11">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>470</y>
+              <width>200</width>
+              <height>33</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_bat1_Interpret_SPCI">
+            <property name="geometry">
+             <rect>
+              <x>520</x>
+              <y>400</y>
+              <width>506</width>
+              <height>220</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;
+&lt;body&gt;
+&lt;pre&gt;
+                       Interpretation of the specific parameters
+&lt;/pre&gt;
+&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::RichText</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="Bat1_Maint_See_Autotestresults">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>290</y>
+              <width>111</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);
+border-radius:5px;
+}
+QPushButton:checked
+{
+border: 1px solid green;
+}</string>
+            </property>
+            <property name="text">
+             <string>Results of 
+ Maintenance 
+test</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_SPCI_BS_bit6">
+            <property name="geometry">
+             <rect>
+              <x>610</x>
+              <y>170</y>
+              <width>200</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_SPCI_BS_bit7">
+            <property name="geometry">
+             <rect>
+              <x>610</x>
+              <y>192</y>
+              <width>200</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat1_Maint_SPCI_BS_bit11to15">
+            <property name="geometry">
+             <rect>
+              <x>610</x>
+              <y>214</y>
+              <width>200</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Interpret_bat1_maint_spci">
+            <property name="geometry">
+             <rect>
+              <x>530</x>
+              <y>430</y>
+              <width>480</width>
+              <height>100</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat_Maint_SPCI_RTE_10S">
+            <property name="geometry">
+             <rect>
+              <x>680</x>
+              <y>295</y>
+              <width>68</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Bat_Maint_SPCI_RTE_10E">
+            <property name="geometry">
+             <rect>
+              <x>680</x>
+              <y>320</y>
+              <width>68</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Interpret_bat1_maint_spci_RTE">
+            <property name="geometry">
+             <rect>
+              <x>530</x>
+              <y>540</y>
+              <width>480</width>
+              <height>75</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_TestResultsBat1_Maintenance">
+           <widget class="QLabel" name="label_bat1_testresults_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>506</width>
+              <height>620</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;
+&lt;style&gt;
+div{color:white};
+&lt;/style&gt;
+&lt;body&gt;
+&lt;pre&gt;                             Maintenance Test results 
+&lt;br&gt;&lt;div&gt;Result after Charging/Discharging the Battery to 80%&lt;/div&gt;
+Voltage:                  mV                 Remaining Capacity:                     mAh  
+Temperature:               °C            Cycle Count:                                    cycles
+ASOC:                      %                    
+Battery Status:
+
+
+&lt;br&gt;Result after Discharging the Battery to 10%
+Voltage:                  mV                 Remaining Capacity:                     mAh  
+Temperature:               °C            Cycle Count:                                    cycles
+ASOC:                      %                    
+Battery Status:
+
+
+&lt;br&gt;Result after Charging the Battery again to 80%
+Voltage:                  mV                 Remaining Capacity:                     mAh  
+Temperature:               °C            Cycle Count:                                    cycles
+ASOC:                      %                    
+Battery Status:
+
+
+&lt;pre/&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::RichText</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_f80_vt">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>113</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_f80_temp">
+            <property name="geometry">
+             <rect>
+              <x>110</x>
+              <y>135</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_f80_asoc">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>157</y>
+              <width>68</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_f80_remcap">
+            <property name="geometry">
+             <rect>
+              <x>380</x>
+              <y>113</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_f80_cyclecount">
+            <property name="geometry">
+             <rect>
+              <x>380</x>
+              <y>135</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_f80_bs_bit6">
+            <property name="geometry">
+             <rect>
+              <x>120</x>
+              <y>180</y>
+              <width>250</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_f80_bs_bit7">
+            <property name="geometry">
+             <rect>
+              <x>120</x>
+              <y>201</y>
+              <width>250</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_f80_bs_bit11to15">
+            <property name="geometry">
+             <rect>
+              <x>120</x>
+              <y>222</y>
+              <width>250</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_m80_vt">
+            <property name="geometry">
+             <rect>
+              <x>74</x>
+              <y>287</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_m80_temp">
+            <property name="geometry">
+             <rect>
+              <x>110</x>
+              <y>310</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_m80_asoc">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>330</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_m80_remcap">
+            <property name="geometry">
+             <rect>
+              <x>380</x>
+              <y>287</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_m80_cyclecount">
+            <property name="geometry">
+             <rect>
+              <x>380</x>
+              <y>310</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_m80_bs_bit6">
+            <property name="geometry">
+             <rect>
+              <x>120</x>
+              <y>360</y>
+              <width>250</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_m80_bs_bit7">
+            <property name="geometry">
+             <rect>
+              <x>120</x>
+              <y>381</y>
+              <width>250</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_m80_bs_bit11to15">
+            <property name="geometry">
+             <rect>
+              <x>120</x>
+              <y>402</y>
+              <width>250</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_l80_vt">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>465</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_l80_temp">
+            <property name="geometry">
+             <rect>
+              <x>110</x>
+              <y>487</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_l80_asoc">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>507</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_l80_rempcap">
+            <property name="geometry">
+             <rect>
+              <x>380</x>
+              <y>465</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_l80_cyclecount">
+            <property name="geometry">
+             <rect>
+              <x>380</x>
+              <y>487</y>
+              <width>51</width>
+              <height>18</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_l80_bs_bit6">
+            <property name="geometry">
+             <rect>
+              <x>120</x>
+              <y>533</y>
+              <width>250</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_l80_bs_bit7">
+            <property name="geometry">
+             <rect>
+              <x>120</x>
+              <y>554</y>
+              <width>250</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="bat1_maint_result_l80_bs_bit11to15">
+            <property name="geometry">
+             <rect>
+              <x>120</x>
+              <y>575</y>
+              <width>250</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_maint_bat1_BacktoMaint">
+            <property name="geometry">
+             <rect>
+              <x>1175</x>
+              <y>600</y>
+              <width>24</width>
+              <height>24</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: rgb(47, 47, 47);
+background-image: url(:/icon/icons/24x24/cil-arrow-circle-left.png);
+background-repeat:none;
+color: rgb(255, 255, 255);
+border-radius: 5px ;
+
+}
+QPushButton:pressed
+{
+border:1px solid green;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_bat1_Interpret_Maintenance_results">
+            <property name="geometry">
+             <rect>
+              <x>530</x>
+              <y>10</y>
+              <width>560</width>
+              <height>620</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(27, 29, 35);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;
+&lt;body&gt;
+&lt;pre&gt;
+                  Interpretation of the Maintenance Use Case Results
+&lt;/pre&gt;
+&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::RichText</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="interpret_b1m_voltage">
+            <property name="geometry">
+             <rect>
+              <x>535</x>
+              <y>63</y>
+              <width>550</width>
+              <height>85</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(47, 47, 47);</string>
+            </property>
+            <property name="text">
+             <string>Voltage</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="interpret_b1m_temperature">
+            <property name="geometry">
+             <rect>
+              <x>535</x>
+              <y>152</y>
+              <width>550</width>
+              <height>80</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(47, 47, 47);</string>
+            </property>
+            <property name="text">
+             <string>Temperature</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="interpret_b1m_Remcap">
+            <property name="geometry">
+             <rect>
+              <x>535</x>
+              <y>235</y>
+              <width>550</width>
+              <height>85</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(47, 47, 47);</string>
+            </property>
+            <property name="text">
+             <string>Remcap</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="interpret_b1m_ASOC">
+            <property name="geometry">
+             <rect>
+              <x>535</x>
+              <y>322</y>
+              <width>550</width>
+              <height>80</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(47, 47, 47);</string>
+            </property>
+            <property name="text">
+             <string>ASOC</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="interpret_b1m_cycles">
+            <property name="geometry">
+             <rect>
+              <x>535</x>
+              <y>405</y>
+              <width>550</width>
+              <height>80</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Cycles</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="interpret_b1m_batstatus">
+            <property name="geometry">
+             <rect>
+              <x>535</x>
+              <y>488</y>
+              <width>550</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Bat Status</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="interpret_b1m_batstatus_no_alarm">
+            <property name="geometry">
+             <rect>
+              <x>535</x>
+              <y>548</y>
+              <width>550</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Bat Status</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="main_footer">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(27, 29, 35);
+border:none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
