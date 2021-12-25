@@ -1,0 +1,39 @@
+						 BATTERY 1 MAINTENANCE USE CASE REPORT 
+->Battery 1 Maintenance Use Case general info
+
+Serial No:1
+Manufacturer Name: LS Telcom AG 
+Cycle Count:9 cycles
+Remaining Capacity:5538 mAh 
+Voltage:16114 mV 
+Absolute State of Charge:84 % 
+Temperature:23.85 C 
+Battery Status:
+Battery is in Discharge /Relax mode
+Gauge Initialization is complete
+No alarm Detected
+
+->Battery 1 Maintenance Use Case Specific Info
+
+Battery Status: 
+Battery is in Discharge /Relax mode
+Gauge Initialization is complete
+No alarm detected
+
+Full Charge Capacity:6454 mAh 
+Design Capacity:6600 mAh 
+
+->Battery 1 Maintenance Use case Test Results
+CycleCount, RemainingCapacity, ASOC, Voltage,Temperature, Battery Status
+Battery Charged to 80%
+9,5538,84,16107,23.95,199,
+
+ Specific Info - Run Time to Empty 
+RTE 10 % discharge start :218 min
+RTE 10 % discharge end :215 min
+
+Battery Discharged to 10%
+9,5412,82,15970,24.05,199,
+
+Battery Recharged to 80%
+9,5479,84,16129,24.35,199,
