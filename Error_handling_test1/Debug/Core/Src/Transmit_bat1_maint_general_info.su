@@ -1,0 +1,6 @@
+Transmit_bat1_maint_general_info.c:15:6:API_Maint_transmit_General_Info_to_Pi	24	static
+Transmit_bat1_maint_general_info.c:66:6:send_bat1_maint_GI_voltage	32	static
+Transmit_bat1_maint_general_info.c:74:6:send_bat1_maint_GI_asoc	32	static
+Transmit_bat1_maint_general_info.c:81:6:send_bat1_maint_GI_remcap	32	static
+Transmit_bat1_maint_general_info.c:87:6:API_send_bat1_maint_GI_voltage	40	static
+Transmit_bat1_maint_general_info.c:115:6:API_send_bat1_maint_GI_asoc	40	static

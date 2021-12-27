@@ -1,0 +1,4 @@
+Specific_parameters_main_BAT2.c:32:6:Read_and_Compare_Specific_para_Bat2_STM_to_Pi	88	static
+Specific_parameters_main_BAT2.c:103:6:Compare_Specifi_para_Bat2	40	static,ignoring_inline_asm
+Specific_parameters_main_BAT2.c:151:6:Read_bat2_maint_Run_time_to_empty_start_of_discharge	32	static
+Specific_parameters_main_BAT2.c:177:6:Read_bat2_maint_Run_time_to_empty_end_of_discharge	32	static

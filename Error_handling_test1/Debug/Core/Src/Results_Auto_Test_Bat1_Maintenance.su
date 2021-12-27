@@ -1,0 +1,5 @@
+Results_Auto_Test_Bat1_Maintenance.c:24:6:Read_Bat1_Maint_autotest_result_first_80_percent	152	static
+Results_Auto_Test_Bat1_Maintenance.c:139:6:Read_Bat1_Maint_autotest_result_middle_10_percent	152	static
+Results_Auto_Test_Bat1_Maintenance.c:239:6:Read_Bat1_Maint_autotest_result_last_80_percent	152	static
+Results_Auto_Test_Bat1_Maintenance.c:360:6:connect_to_Pi	16	static
+Results_Auto_Test_Bat1_Maintenance.c:398:6:connect_to_Pi2	40	static
