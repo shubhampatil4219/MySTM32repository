@@ -1,0 +1,40 @@
+						 BATTERY 3 MAINTENANCE USE CASE REPORT 
+->Battery 3 Maintenance Use Case general info
+
+Serial No:1
+Manufacturer Name: LS Telcom AG 
+Manufacturing Date:18.8.2020
+Cycle Count:9 cycles
+Remaining Capacity:5479 mAh 
+Voltage:16100 mV 
+Absolute State of Charge:84 % 
+Temperature:25.65 C 
+Battery Status:
+Battery is in Discharge /Relax mode
+Gauge Initialization is complete
+No alarm Detected
+
+->Battery 3 Maintenance Use Case Specific Info
+
+Battery Status: 
+Battery is in Discharge /Relax mode
+Gauge Initialization is complete
+No alarm detected
+
+Full Charge Capacity:6392 mAh 
+Design Capacity:6600 mAh 
+
+->Battery 3 Maintenance Use case Test Results
+CycleCount, RemainingCapacity, ASOC, Voltage,Temperature, Battery Status
+Battery Charged to 80%
+9,5479,84,16100,25.65,199,
+
+ Specific Info - Run Time to Empty 
+RTE 10 % discharge start :218 min
+RTE 10 % discharge end :215 min
+
+Battery Discharged to 10%
+9,5412,82,15972,25.85,199,
+
+Battery Recharged to 80%
+9,5479,84,16121,26.25,199,

@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/attachments/Asset 1.png</file>
+        <file>icons/attachments/Asset 2.png</file>
+        <file>icons/attachments/Asset 3.png</file>
+        <file>icons/attachments/Asset 4.png</file>
+        <file>icons/attachments/Asset 5.png</file>
+        <file>icons/attachments/Asset 6.png</file>
+        <file>icons/attachments/Asset 7.png</file>
+        <file>icons/attachments/Asset 8.png</file>
+        <file>icons/attachments/Asset 9.png</file>
+        <file>icons/attachments/Asset 10.png</file>
+        <file>icons/attachments/Asset 32.png</file>
+        <file>icons/attachments/Download.jpeg</file>
+        <file>icons/attachments/ls_telcom_logo.png</file>
+        <file>icons/attachments/LStelcom_groß.png</file>
+        <file>icons/attachments/LStelcom_mini.png</file>
+        <file>icons/attachments/LStelcom_mittel.png</file>
+    </qresource>
+</RCC>

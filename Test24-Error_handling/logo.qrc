@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/Logo_ohne_claim/LS_telcom_4C_ohneClaim_1.png</file>
+    </qresource>
+</RCC>
