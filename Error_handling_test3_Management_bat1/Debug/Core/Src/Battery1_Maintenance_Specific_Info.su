@@ -1,0 +1,2 @@
+Battery1_Maintenance_Specific_Info.c:18:6:Send_Bat1_Maintenance_Specific_Info_To_Pi	88	static
+Battery1_Maintenance_Specific_Info.c:75:6:design_capacity	32	static

@@ -1,0 +1,2 @@
+timer_delay.c:15:6:usdelay	16	static
+timer_delay.c:21:6:msdelay	24	static

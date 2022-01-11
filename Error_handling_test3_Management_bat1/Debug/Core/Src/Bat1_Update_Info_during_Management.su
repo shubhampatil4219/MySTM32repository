@@ -1,0 +1,7 @@
+Bat1_Update_Info_during_Management.c:38:6:update_voltage_during_management_bat1	16	static
+Bat1_Update_Info_during_Management.c:95:6:update_asoc_during_management_bat1	16	static
+Bat1_Update_Info_during_Management.c:141:6:update_RemCap_during_management_bat1	16	static
+Bat1_Update_Info_during_Management.c:193:7:update_cyclecount_during_management_bat1	16	static
+Bat1_Update_Info_during_Management.c:236:7:update_batstatus_during_management_bat1	16	static
+Bat1_Update_Info_during_Management.c:281:7:update_temperature_during_management_bat1	16	static
+Bat1_Update_Info_during_Management.c:326:7:update_current_during_management_bat1	16	static

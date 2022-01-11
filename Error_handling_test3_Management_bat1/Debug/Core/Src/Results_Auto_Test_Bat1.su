@@ -1,0 +1,6 @@
+Results_Auto_Test_Bat1.c:19:6:Read_Bat1_Maint_autotest_result_first_80_percent	192	static
+Results_Auto_Test_Bat1.c:116:6:API_transmit_Bat1_autotest_Maint_first_80_percent	56	static
+Results_Auto_Test_Bat1.c:175:6:Read_Bat1_Maint_autotest_result_middle_10_percent	192	static
+Results_Auto_Test_Bat1.c:267:6:API_transmit_Bat1_autotest_Maint_middle_10_percent	56	static
+Results_Auto_Test_Bat1.c:321:6:Read_Bat1_Maint_autotest_result_last_80_percent	192	static
+Results_Auto_Test_Bat1.c:415:6:API_transmit_Bat1_autotest_Maint_last_80_percent	56	static

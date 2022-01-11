@@ -1,0 +1,5 @@
+Receive_BAT1_Info.c:21:5:get_bat1_voltage	16	static
+Receive_BAT1_Info.c:31:6:get_bat1_asoc	16	static
+Receive_BAT1_Info.c:40:6:get_bat1_temperature	16	static
+Receive_BAT1_Info.c:48:6:get_bat1_remaining_capacity	16	static
+Receive_BAT1_Info.c:56:6:get_bat1_cyclecount	16	static
